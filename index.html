@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHIGGA SRL | Consultora de Higiene, Seguridad y Medio Ambiente</title>
+  <meta name="description" content="Servicio de Higiene y Seguridad Laboral para industrias y obras. Cumplimiento legal garantizado y atención inmediata. Más de 20 años de experiencia en Argentina.">
+  <meta name="keywords" content="higiene y seguridad, seguridad laboral, medio ambiente, consultora, Argentina, Rosario, seguridad industrial, planes de emergencia, capacitaciones">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    * { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(to right, #bde2a7, #97c693);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient-bg {
+      background: #4b916d;
+    }
+    .gradient-bg:hover {
+      background: #0d4f3d;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo Original -->
+        <a href="#inicio" class="flex items-center gap-3">
+          <img 
+            src="logo-shigga.avif" 
+            alt="SHIGGA SRL" 
+            class="w-10 h-10 md:w-12 md:h-12 object-contain"
+          >
+          <div>
+            <span class="text-xl md:text-2xl font-bold text-gray-900">SHIGGA</span>
+            <span class="hidden sm:inline text-sm text-gray-500 ml-2">SRL</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#inicio" class="text-gray-600 hover:text-[#4b916d] transition-colors font-medium">Inicio</a>
+          <a href="#servicios" class="text-gray-600 hover:text-[#4b916d] transition-colors font-medium">Servicios</a>
+          <a href="#nosotros" class="text-gray-600 hover:text-[#4b916d] transition-colors font-medium">Nosotros</a>
+          <a href="#contacto" class="text-gray-600 hover:text-[#4b916d] transition-colors font-medium">Contacto</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="https://wa.me/5493412345678" target="_blank" rel="noopener noreferrer">
+            <button class="gradient-bg text-white px-6 py-3 rounded-lg font-medium shadow-lg shadow-[#4b916d]/25 flex items-center gap-2 hover:shadow-xl transition-shadow">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+              Contactar
+            </button>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+          <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-100">
+        <nav class="flex flex-col gap-4">
+          <a href="#inicio" class="text-gray-600 hover:text-[#4b916d] transition-colors font-medium py-2">Inicio</a>
+          <a href="#servicios" class="text-gray-600 hover:text-[#4b916d] transition-colors font-medium py-2">Servicios</a>
+          <a href="#nosotros" class="text-gray-600 hover:text-[#4b916d] transition-colors font-medium py-2">Nosotros</a>
+          <a href="#contacto" class="text-gray-600 hover:text-[#4b916d] transition-colors font-medium py-2">Contacto</a>
+          <a href="https://wa.me/5493412345678" target="_blank" rel="noopener noreferrer">
+            <button class="w-full gradient-bg text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+              Contactar por WhatsApp
+            </button>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <div class="inline-flex items-center gap-2 bg-[#4b916d]/20 border border-[#4b916d]/30 rounded-full px-4 py-2">
+            <i data-lucide="award" class="w-4 h-4 text-[#bde2a7]"></i>
+            <span class="text-sm text-[#bde2a7] font-medium">Más de 20 años de experiencia</span>
+          </div>
+          
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            Protegemos tu empresa,
+            <span class="gradient-text"> garantizamos tu cumplimiento</span>
+          </h1>
+          
+          <p class="text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl">
+            Consultoría integral en Higiene, Seguridad y Medio Ambiente con validez legal inmediata. 
+            Servicios profesionales respaldados por firmas colegiadas y registros actualizados.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contacto">
+              <button class="gradient-bg text-white px-8 py-4 rounded-lg font-semibold shadow-xl shadow-[#4b916d]/25 flex items-center gap-2 group hover:shadow-2xl transition-all">
+                Solicitar Presupuesto
+                <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+              </button>
+            </a>
+            <a href="#servicios">
+              <button class="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                Ver Servicios
+              </button>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Hero Image/Illustration -->
+        <div class="hidden lg:block relative">
+          <div class="relative w-full aspect-square max-w-lg mx-auto">
+            <div class="absolute inset-0 bg-gradient-to-br from-[#4b916d]/20 to-[#bde2a7]/20 rounded-3xl rotate-6"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-[#4b916d]/10 to-[#bde2a7]/10 rounded-3xl -rotate-3"></div>
+            <div class="relative bg-gradient-to-br from-gray-800 to-gray-700 rounded-3xl p-8 border border-white/10">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-[#4b916d]/50 transition-colors group cursor-pointer">
+                  <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4b916d] to-[#0d4f3d] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <i data-lucide="shield" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <span class="text-white font-medium">Seguridad</span>
+                </div>
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-[#4b916d]/50 transition-colors group cursor-pointer">
+                  <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4b916d] to-[#97c693] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <i data-lucide="leaf" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <span class="text-white font-medium">Ambiente</span>
+                </div>
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-[#4b916d]/50 transition-colors group cursor-pointer">
+                  <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4b916d] to-[#0d4f3d] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <i data-lucide="hard-hat" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <span class="text-white font-medium">Obras</span>
+                </div>
+                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 hover:border-[#4b916d]/50 transition-colors group cursor-pointer">
+                  <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4b916d] to-[#bde2a7] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <i data-lucide="file-text" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <span class="text-white font-medium">Certificaciones</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Wave Divider -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Estadísticas -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center group">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#effae5] to-[#daf3c0] mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="users" class="w-8 h-8 text-[#4b916d]"></i>
+          </div>
+          <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">30+</div>
+          <div class="text-gray-600 font-medium">Técnicos Especializados</div>
+        </div>
+        <div class="text-center group">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#effae5] to-[#daf3c0] mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="check-circle-2" class="w-8 h-8 text-[#4b916d]"></i>
+          </div>
+          <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">3500+</div>
+          <div class="text-gray-600 font-medium">Clientes Satisfechos</div>
+        </div>
+        <div class="text-center group">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#effae5] to-[#daf3c0] mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="building-2" class="w-8 h-8 text-[#4b916d]"></i>
+          </div>
+          <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">300+</div>
+          <div class="text-gray-600 font-medium">Industrias Asesoradas</div>
+        </div>
+        <div class="text-center group">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#effae5] to-[#daf3c0] mb-4 group-hover:scale-110 transition-transform">
+            <i data-lucide="award" class="w-8 h-8 text-[#4b916d]"></i>
+          </div>
+          <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">20+</div>
+          <div class="text-gray-600 font-medium">Años de Experiencia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="inline-block text-[#4b916d] font-semibold text-sm uppercase tracking-wider mb-4">Nuestros Servicios</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Soluciones integrales para tu empresa
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Ofrecemos una amplia gama de servicios especializados en higiene, seguridad y medio ambiente, 
+          con respaldo profesional y cumplimiento normativo garantizado.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Servicio 1 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-[#4b916d] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#4b916d]/20">
+            <i data-lucide="shield" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4b916d] transition-colors">
+            Higiene y Seguridad
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Gestión integral de seguridad laboral con cumplimiento normativo garantizado y prevención de riesgos laborales.
+          </p>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-[#4b916d] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#4b916d]/20">
+            <i data-lucide="leaf" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4b916d] transition-colors">
+            Medio Ambiente
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Gestión ambiental responsable, estudios de impacto y cumplimiento de normativas ambientales vigentes.
+          </p>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-[#4b916d] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#4b916d]/20">
+            <i data-lucide="hard-hat" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4b916d] transition-colors">
+            Seguridad en Obra
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Supervisión y control de seguridad en obras de construcción con protocolos actualizados.
+          </p>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-[#4b916d] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#4b916d]/20">
+            <i data-lucide="alert-triangle" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4b916d] transition-colors">
+            Planes de Emergencia
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Diseño e implementación de planes de evacuación y respuesta ante emergencias.
+          </p>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-[#4b916d] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#4b916d]/20">
+            <i data-lucide="file-text" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4b916d] transition-colors">
+            Planos y Permisos
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Elaboración de planos, estudios técnicos y gestión de permisos habilitantes.
+          </p>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-[#4b916d] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#4b916d]/20">
+            <i data-lucide="flask-conical" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4b916d] transition-colors">
+            Estudios de Laboratorio
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Análisis y mediciones especializadas con certificación oficial válida.
+          </p>
+        </div>
+
+        <!-- Servicio 7 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-[#4b916d] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#4b916d]/20">
+            <i data-lucide="graduation-cap" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4b916d] transition-colors">
+            Capacitaciones
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Formación in-situ y online en seguridad, higiene y medio ambiente.
+          </p>
+        </div>
+
+        <!-- Servicio 8 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-[#4b916d] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#4b916d]/20">
+            <i data-lucide="spray-can" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4b916d] transition-colors">
+            Desinfección y Control
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Servicios de fumigación, desratización y control de plagas certificados.
+          </p>
+        </div>
+
+        <!-- Servicio 9 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-[#4b916d] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform shadow-lg shadow-[#4b916d]/20">
+            <i data-lucide="gauge" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#4b916d] transition-colors">
+            Aparatos a Presión
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Inspección y certificación de aparatos sometidos a presión según normativa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-8">
+          <div>
+            <span class="inline-block text-[#4b916d] font-semibold text-sm uppercase tracking-wider mb-4">Sobre Nosotros</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Profesionales comprometidos con tu seguridad
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+              Somos una consultora de Higiene, Seguridad y Medio Ambiente que comenzó en 2009. 
+              Manteniendo los valores SHIGGA SRL, logramos ocupar un reconocido lugar en el mercado.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Aspiramos ser líderes en la prestación de servicios, con preocupación continua en el 
+              mejoramiento pro-activo y dinámico, sin disminuir los estándares de calidad. Formamos 
+              nuestro equipo con profesionales especializados en cada una de las áreas.
+            </p>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-[#4b916d] flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="text-gray-700">Habilitaciones y registros actualizados</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-[#4b916d] flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="text-gray-700">Firmas colegiadas con validez legal</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-[#4b916d] flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="text-gray-700">Atención inmediata y personalizada</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-[#4b916d] flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="text-gray-700">Profesionales especializados en cada área</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Founder Card -->
+        <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 text-white">
+          <div class="flex items-start gap-6 mb-8">
+            <img 
+              src="logo-shigga.avif" 
+              alt="SHIGGA" 
+              class="w-20 h-20 rounded-2xl object-contain bg-white/10 p-2"
+            >
+            <div>
+              <h3 class="text-2xl font-bold mb-1">Amoroso Gabriel G.</h3>
+              <p class="text-[#bde2a7] font-medium">Socio Gerente - SHIGGA SRL</p>
+            </div>
+          </div>
+          
+          <div class="space-y-4 mb-8">
+            <div class="flex items-center gap-3 text-gray-300">
+              <i data-lucide="shield" class="w-5 h-5 text-[#bde2a7]"></i>
+              <span>Lic. Higiene y Seguridad</span>
+            </div>
+            <div class="flex items-center gap-3 text-gray-300">
+              <i data-lucide="leaf" class="w-5 h-5 text-[#bde2a7]"></i>
+              <span>Especialista en Medio Ambiente</span>
+            </div>
+            <div class="flex items-center gap-3 text-gray-300">
+              <i data-lucide="gauge" class="w-5 h-5 text-[#bde2a7]"></i>
+              <span>Técnico Electromecánico</span>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 rounded-2xl p-6 border border-white/10">
+            <p class="text-gray-300 italic leading-relaxed">
+              "Nuestros servicios cuentan con el respaldo de firmas colegiadas y registros actualizados 
+              ante los consejos profesionales correspondientes, garantizando la validez técnica y legal de cada intervención."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clientes -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="inline-block text-[#4b916d] font-semibold text-sm uppercase tracking-wider mb-4">Clientes</span>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+          Empresas que confían en nosotros
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 flex items-center justify-center h-24 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+          <span class="text-xl font-bold text-gray-400 hover:text-[#4b916d] transition-colors">Techint</span>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex items-center justify-center h-24 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+          <span class="text-xl font-bold text-gray-400 hover:text-[#4b916d] transition-colors">Arcor</span>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex items-center justify-center h-24 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+          <span class="text-xl font-bold text-gray-400 hover:text-[#4b916d] transition-colors">Ford</span>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex items-center justify-center h-24 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+          <span class="text-xl font-bold text-gray-400 hover:text-[#4b916d] transition-colors">Toyota</span>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex items-center justify-center h-24 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+          <span class="text-xl font-bold text-gray-400 hover:text-[#4b916d] transition-colors">Bayer</span>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex items-center justify-center h-24 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+          <span class="text-xl font-bold text-gray-400 hover:text-[#4b916d] transition-colors">Unilever</span>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex items-center justify-center h-24 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+          <span class="text-xl font-bold text-gray-400 hover:text-[#4b916d] transition-colors">Nestlé</span>
+        </div>
+        <div class="bg-white rounded-2xl p-6 flex items-center justify-center h-24 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+          <span class="text-xl font-bold text-gray-400 hover:text-[#4b916d] transition-colors">Quilmes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <span class="inline-block text-[#4b916d] font-semibold text-sm uppercase tracking-wider mb-4">Contacto</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            ¿Listo para comenzar?
+          </h2>
+          <p class="text-lg text-gray-600 mb-8">
+            Contáctanos hoy y uno de nuestros especialistas te asesorará sobre las mejores 
+            soluciones para tu empresa.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#4b916d] flex items-center justify-center flex-shrink-0">
+                <i data-lucide="phone" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Teléfono</h4>
+                <p class="text-gray-600">+54 341 234-5678</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#4b916d] flex items-center justify-center flex-shrink-0">
+                <i data-lucide="mail" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                <p class="text-gray-600">info@shigga.com.ar</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#4b916d] flex items-center justify-center flex-shrink-0">
+                <i data-lucide="map-pin" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Ubicación</h4>
+                <p class="text-gray-600">Rosario, Santa Fe, Argentina</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#4b916d] flex items-center justify-center flex-shrink-0">
+                <i data-lucide="clock" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 mb-1">Horario de Atención</h4>
+                <p class="text-gray-600">Lunes a Viernes: 8:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Formulario -->
+        <div class="bg-gray-50 rounded-3xl p-8 shadow-lg">
+          <h3 class="text-xl font-bold text-gray-900 mb-6">Envíanos un mensaje</h3>
+          <form id="contact-form" class="space-y-5">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Nombre completo</label>
+              <input type="text" placeholder="Tu nombre" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#4b916d] focus:ring-2 focus:ring-[#4b916d]/20 outline-none transition-all">
+            </div>
+            
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+              <input type="email" placeholder="tu@email.com" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#4b916d] focus:ring-2 focus:ring-[#4b916d]/20 outline-none transition-all">
+            </div>
+            
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
+              <input type="tel" placeholder="+54 9 341..." class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#4b916d] focus:ring-2 focus:ring-[#4b916d]/20 outline-none transition-all">
+            </div>
+            
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+              <textarea placeholder="¿En qué podemos ayudarte?" required rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#4b916d] focus:ring-2 focus:ring-[#4b916d]/20 outline-none transition-all resize-none"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full gradient-bg text-white px-6 py-4 rounded-lg font-semibold shadow-lg shadow-[#4b916d]/25 flex items-center justify-center gap-2 hover:shadow-xl transition-all">
+              Enviar Mensaje
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-16 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <!-- Logo y descripción -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <img 
+              src="logo-shigga.avif" 
+              alt="SHIGGA SRL" 
+              class="w-12 h-12 object-contain bg-white/10 rounded-lg p-1"
+            >
+            <div>
+              <span class="text-2xl font-bold">SHIGGA</span>
+              <span class="text-sm text-gray-400 ml-2">SRL</span>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed mb-6 max-w-md">
+            Consultora de Higiene, Seguridad y Medio Ambiente con más de 20 años de experiencia. 
+            Servicio profesional con validez legal inmediata.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 rounded-lg bg-white/10 hover:bg-[#4b916d] transition-colors flex items-center justify-center">
+              <i data-lucide="facebook" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-lg bg-white/10 hover:bg-[#4b916d] transition-colors flex items-center justify-center">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-lg bg-white/10 hover:bg-[#4b916d] transition-colors flex items-center justify-center">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Links -->
+        <div>
+          <h4 class="font-semibold mb-4">Servicios</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li><a href="#servicios" class="hover:text-[#bde2a7] transition-colors">Higiene y Seguridad</a></li>
+            <li><a href="#servicios" class="hover:text-[#bde2a7] transition-colors">Medio Ambiente</a></li>
+            <li><a href="#servicios" class="hover:text-[#bde2a7] transition-colors">Seguridad en Obra</a></li>
+            <li><a href="#servicios" class="hover:text-[#bde2a7] transition-colors">Capacitaciones</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Contacto</h4>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-[#bde2a7]"></i>
+              +54 341 234-5678
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-[#bde2a7]"></i>
+              info@shigga.com.ar
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-[#bde2a7]"></i>
+              Rosario, Argentina
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm">
+          © 2009 - 2026 SHIGGA SRL. Todos los derechos reservados.
+        </p>
+        <div class="flex gap-6 text-sm text-gray-500">
+          <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
+          <a href="#" class="hover:text-white transition-colors">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.setAttribute('data-lucide', 'menu');
+      } else {
+        menuIcon.setAttribute('data-lucide', 'x');
+      }
+      lucide.createIcons();
+    });
+
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      });
+    });
+
+    // Form submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('¡Gracias por contactarnos! Te responderemos a la brevedad.');
+      this.reset();
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
